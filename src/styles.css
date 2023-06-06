@@ -36,7 +36,7 @@ nav ul{
 nav ul div.items {
   display: inline-flex;
   flex: 2;
-  margin-left: 28%;
+  margin-left: 25%;
   padding: 0 25px;
 }
 
@@ -394,7 +394,7 @@ p {
   margin-top: 20px;
   margin-left: 0px;
   border-radius: 30px;
-  background-color: coral;
+  background-color: #FFF9D9;
   font-size: 20px;
   text-align: center;
   
@@ -403,13 +403,17 @@ p {
 
 /*Button change on hover */
 .button:hover {
-  background-color: #ef744b;
+  background-color: black;
 }
 
 /*Button change on click */
 .button:active {
   background-color: #a9a9a9;
   color: #808080;
+}
+
+.map-button {
+  color: #c8102e;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -430,7 +434,7 @@ p {
 }
 
 .footer-text:hover {
-  color: #fff;
+  color: #c8102e;
 }
 
 .row {

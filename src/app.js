@@ -52,7 +52,7 @@ class MyFooter extends HTMLElement {
    <br>
   <a class="phone-number" href="tel:1-713-743-2255">(713) 743-2255</a>
   </div>
-    <div class="button"><a href="map.html" class="">Campus Map</a></div>
+    <div class="button"><a href="map.html" class="map-button">Campus Map</a></div>
   </div>
 
   <div class="column">
