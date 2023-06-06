@@ -1,0 +1,486 @@
+/*Organize CSS Properties*/
+/*   
+.selector {
+  dimension properties
+  box model properties
+  placement proeprties (Position | Display | Float)
+  appearance properties (Background | Box-Shadow)
+  font & text properties
+  font colors
+  transform & animation properties
+*/
+
+body, html {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Crimson", sans-serif;
+}
+
+/* Start of Nav bar */
+nav{
+  padding: 10px 40px 10px 70px;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+  background: #c8102e;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul div.items {
+  display: inline-flex;
+  flex: 2;
+  margin-left: 10%;
+  padding: 0 25px;
+}
+
+nav ul div.items a {
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF9D9;
+}
+
+nav ul div.items a:hover {
+  font-weight: bold;
+  font-size: larger;
+  color: #fff;
+}
+
+.active nav ul div.items {
+  color: #54585A;
+}
+
+nav ul .search-icon {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10%;
+  background: #f2f2f2;
+}
+
+nav ul .search-icon input {
+  width: 457px;
+  height: 100%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: red;
+}
+
+/* input box background color changes when you start to type */
+nav ul .search-icon input:focus {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+nav ul .search-icon .icon {
+  width: 50px;
+  height: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 0 5px 5px 0;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover
+{
+  background: #e6e6e6;
+}
+
+nav ul .search-icon .icon span {
+  font-size: 18px;
+  color: #222222;
+}
+
+nav ul li.btn {
+  display: none;
+  flex: 1;
+  padding: 0 40px;
+  font-size: 29px; 
+}
+
+nav ul li.btn span {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul li.btn span.show:before {
+  content: '\f00d';
+}
+
+@media screen and (max-width: 1870px) {
+  nav ul div.items{
+    padding-right: 35%;
+  }
+}
+@media screen and (max-width: 1052px) {
+  nav{
+    padding: 10px 40px 10px 0px;
+  }
+
+  nav ul li.logo {
+    display: none;
+  }
+
+  nav ul div.items {
+    flex: 4;
+    height: 40px;
+    margin-left: 25%;
+    padding-right: 35%;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  nav ul{
+    flex-wrap: nowrap;
+  }
+
+  nav ul li.search{
+    width: 50vmin;
+  }
+
+  nav ul li input{
+    width: 40vmin;
+  }
+
+  nav ul li .search-icon{
+    width: 10vmin;
+  }
+}
+/*End of Nav Bar */
+
+/* Search bar list of items */
+/* Hides the list by default  */
+#list {
+  position: absolute;
+  display: none;
+  top: 57px;
+  right: 707px;
+  border: 1px solid lightgrey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  width: 438px;
+  background-color: black;
+  text-align: center;
+}
+
+.listItem {
+  padding: 5px 20px;
+  flex-direction: column;
+  text-decoration: none;
+  color: #c8102e;
+}
+
+.listItem:hover {
+  background-color: lightgrey;
+}
+/*Ends search bar list of items */
+
+section {
+  height: 500px;
+  border: solid black 1px;
+  background-color: rgb(36, 32, 23); 
+}
+
+h1 {
+  margin: 0;
+  font-size: 70px;
+  text-align: left;
+}
+
+h2 {
+  margin: 0;
+  margin-left: 18px;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(155, 195, 191);
+}
+
+/* white-space & line-height wraps text on smaller devices */
+h3 {
+  padding-left: 5%;
+  font-size: 45px;
+  text-align: left;
+  color: #c8102e;
+  line-height: 50px !important;
+  white-space: normal !important; 
+}
+
+p {
+  padding: 0 18px 0 18px;
+  font-size: 18px;
+  font-weight: 300px;
+  text-align: center;
+}
+
+/*Start of Hero */
+.log, .top-logo {
+  height: 61px; 
+}
+
+ @media screen and (max-width: 400px) {
+   .log, .top-logo {
+    height: 1px;
+  }
+} 
+.hero {
+  margin-top: -20px;
+  height: 600px;
+  border: none;
+}
+
+.headshot {
+  display: flex;
+  width: 220px;
+  height: 220px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 180px;
+}
+
+.heading {
+  position: relative;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.heading-paragraph {
+  margin-top: -25px;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  text-align: left;
+  color: white;
+}
+/*End of Hero*/
+
+/*Start of Sub Section*/
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  gap: 50px;
+}
+
+.card {
+  margin: 10px;
+  max-width: 210px;
+  height: 240px;
+  box-shadow: 5px 5px 20px rgb(197, 196, 196);
+  overflow: hidden; /* prevents animation from expanding outside of the card */
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-container {
+    display: flex;
+    max-width: 900px;
+    justify-content: end;
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+/* use transition to expand all of the image for .5s when mouse hovers */
+  transition: all .5s;
+}
+
+.card-image:hover {
+  transform: scale(1,2);
+  opacity: .8rem;
+}
+/*End of Sub Section*/
+
+/* Start of Footer */
+.footer-container {
+  height: 55vh;
+  padding-top: 100px;
+  background-color: #c8102e;
+  color:#FFF9D9;
+  overflow: scroll;
+}
+
+.footer-container::-webkit-scrollbar {
+  display: none;
+}
+
+.footer-heading {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  font-size: 50px;
+  text-align: center;
+  color: #FFF;
+}
+
+.footer-heading:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  background: #000;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 0px;
+  width: 120px;
+  height: 2px;
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Start of logo styles */
+.contact-info, a {
+  line-height: 1.5;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFF9D9;
+}
+
+.phone-number {
+  color: #FFF9D9;
+}
+/* End of logo styles */
+
+.button {
+  width: 135px;
+  height: 40px;
+  padding-top: 5px;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 0px;
+  border-radius: 30px;
+  background-color: coral;
+  font-size: 20px;
+  text-align: center;
+  
+  cursor: pointer;
+}
+
+/*Button change on hover */
+.button:hover {
+  background-color: #ef744b;
+}
+
+/*Button change on click */
+.button:active {
+  background-color: #a9a9a9;
+  color: #808080;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 10px;
+  border: none;
+}
+
+.column-header {
+  color: #fff;
+}
+
+.footer-text {
+  font-size: 20px;
+}
+
+.footer-text:hover {
+  color: #fff;
+}
+
+.row {
+  margin: 5% 5% 0 5%;
+  column-gap: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* End of Footer */
+
+/* Start of About page*/
+.sub-section-header {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.sub-section-paragraph {
+  padding: 0% 0% 10% 0%;
+  text-align: center;
+} 
+/*End of About page*/
+
+/*Start of athletics page */
+.cougar-pride {
+  width: 100%;
+}
+
+.athletics-column-header {
+  color: #c8102e;
+}
+/* End of Athletics Page */
+
+/* Start of Map Page */
+.campus-map {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div, iframe {
+  margin: 1% auto;
+}
+
+iframe {
+  display: block;
+}
+/* End of Map Page */

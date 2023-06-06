@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;@400;@600;700:800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/src/images/fontawesome/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/src/images/fontawesome/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="/src/images/fontawesome/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    
+    <script type=module src=app.js></script>
+  
+    <!-- Meta Description-->
+    <meta content="Located near the heart of Houston, this public, tier one research university offers over 300 degrees and programs and award-winning faculty." name="description">
+    <title>
+      Home | University of Houston
+    </title>
+    
+  </head>
+  <!-- the loadSearchData function will load the searchable data as the page is loading -->
+  <body onload="loadSearchData()">
+
+    <my-header></my-header>
+
+    <section class="hero" id="about">
+    <div class="headshot-container">
+        <img
+          class="headshot"
+          src="src/images/shasta_giphy.gif"
+          alt="Shasta Cougar gif"
+        />
+    </div>
+    <div class="about-uh-container">
+    <div class="heading">
+        <h3>Welcome Freshmen!</h3>
+        <h3>Enjoy your time!</h3>
+        <br>
+        <p class="heading-paragraph">
+          These 4 years will be the best years of your life!
+        </p>
+        
+        <p class="heading-paragraph">
+          "The best way to predict the future is to Create it"
+          - P. Drucker & A. Lincoln
+        </p>
+      </div>
+    </div>
+    </section>
+    <section class="sub-section">
+      <div class="card-container">
+        <div class="card">
+          <img
+            class="card-image"
+            src="src/images/uh-student-center.jpg"
+            alt="Student Center"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="card-image"
+            src="src/images/uh-lynn-eusan-park.jpg"
+            alt="Lynn Eusan Park"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="card-image"
+            src="src/images/uh-md-anderson-library.jpg"
+            alt="MD Anderson Library"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="card-image"
+            src="src/images/uh-blaffer-art-museum.jpg"
+            alt="Blaffer Art Museum"
+          />
+        </div>
+      </div>
+    </section>
+    <my-footer></my-footer>
+    <script src="src/app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
