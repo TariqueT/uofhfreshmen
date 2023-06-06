@@ -36,7 +36,7 @@ nav ul{
 nav ul div.items {
   display: inline-flex;
   flex: 2;
-  margin-left: 10%;
+  margin-left: 28%;
   padding: 0 25px;
 }
 
@@ -50,7 +50,6 @@ nav ul div.items a {
 
 nav ul div.items a:hover {
   font-weight: bold;
-  font-size: larger;
   color: #fff;
 }
 
@@ -65,6 +64,12 @@ nav ul .search-icon {
   border-radius: 5px;
   margin-right: 10%;
   background: #f2f2f2;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul .search-icon {
+    width: 355px;
+  }
 }
 
 nav ul .search-icon input {
@@ -431,6 +436,7 @@ p {
 .row {
   margin: 5% 5% 0 5%;
   column-gap: 40px;
+  min-width: 600px
 }
 
 /* Clear floats after the columns */
